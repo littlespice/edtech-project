@@ -1,5 +1,9 @@
 class Solution:
     def fib(self, N: int) -> int:
+        # Input data checking
+        if not isinstance(N, int):
+            return
+
         # iterative O(n) time O(1) space
         if N in [0, 1]:
             return N

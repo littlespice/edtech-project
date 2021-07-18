@@ -1,10 +1,12 @@
 class Solution:
    def fib(self, N: int) -> int:
-       if N <= 1:
-           return N
-       return self.memoize(N)
+       if N <= 0:
+           return 0
+       elif N == 1:
+           return 1
+       return self.getFibonacciNumber(N)
 
-   def memoize(self, N: int) -> {}:
+   def getFibonacciNumber(self, N: int) -> {}:
        cache = {0: 0, 1: 1}
 
        # Since range is exclusive and we want
