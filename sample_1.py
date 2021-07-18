@@ -12,4 +12,5 @@ def fib(n) :
             fibo[i] = fibo[i-2] + fibo[i-1]
             s += fibo[i]
         return s
-
+    else:
+        print('Input n should be of Integer type')
