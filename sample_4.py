@@ -12,3 +12,4 @@ class Solution:
             second = first
             first = result
         return first + second
+

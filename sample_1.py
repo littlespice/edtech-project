@@ -13,3 +13,4 @@ def fib(n) :
            fibo[i] = fibo[i-2] + fibo[i-1]
            sum += fibo[i]
    return sum
+
