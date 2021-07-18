@@ -3,6 +3,8 @@ class Solution:
         # Input data checking
         if not isinstance(N, int):
             return
+        if N <= 0:
+            return 0
 
         # iterative O(n) time O(1) space
         if N in [0, 1]:
